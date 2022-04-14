@@ -1,0 +1,21 @@
+{
+    "name": "breakers",
+    "displayName": "Breakers",
+    "description": "breakers color theme",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.59.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Breakers Color Theme",
+                "uiTheme": "vs",
+                "path": "./themes/Breakers Color Theme-color-theme.json"
+            }
+        ]
+    }
+}
