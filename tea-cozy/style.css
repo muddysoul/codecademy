@@ -1,0 +1,173 @@
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 7px;
+}
+
+
+/* Nav bar */
+
+.site-header {
+    height: 69px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    border-bottom: 1px solid seashell;
+    padding: 0px 10px;
+    z-index: 10;
+    background-color: black;
+}
+
+.site-nav {
+    align-items: center;
+    display: flex;
+}
+
+.navbar-left,
+.navbar-right {
+    align-items: center;
+    display: flex;
+}
+
+.navbar-left .logo {
+    height: 50px;
+    position: absolute;
+    left: 10px;
+    top: 7px;
+}
+
+.navbar-right {
+    float: right;
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+.navlink {
+    text-align: right;
+    text-decoration: underline;
+    margin: 0 10px;
+}
+
+.navlink a {
+    color: seashell;
+}
+
+.navlink a:hover {
+    color: white;
+}
+
+
+/* Main body */
+
+main {
+    z-index: 0;
+}
+
+.site-banner {
+    height: 700px;
+    width: 1200px;
+    background-image: url('img-mission-background.jpeg');
+    margin: 70px auto;
+    display: flex;
+    align-items: center;
+}
+
+.banner-text {
+    width: 100%;
+    background-color: black;
+}
+
+.site-banner h2 {
+    padding-bottom: 10px;
+}
+
+.tea-of-the-month {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.tea-of-the-month h2,
+.tea-of-the-month h4 {
+    padding: 5px;
+}
+
+.tea-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.item {
+    padding: 10px;
+}
+
+.item img {
+    height: 200px;
+    width: 300px;
+}
+
+.locations {
+    margin: 70px auto;
+    padding: 0;
+    width: 1200px;
+    height: 500px;
+    background-image: url("img-locations-background.jpeg");
+}
+
+.locations h2 {
+    margin: 0;
+    padding: 50px 0 15px 0;
+}
+
+.location-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.location-item {
+    width: 300px;
+    height: 300px;
+    margin: 0 20px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer h3,
+footer h5 {
+    padding: 10px;
+    font-size: 18px;
+}
+
+.footer-shit {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -70px;
+}
+
+#align-left {
+    text-align: left;
+}
