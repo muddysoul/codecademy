@@ -75,7 +75,7 @@ a:hover {
 }
 
 .banner .slogan {
-    background-color: aliceblue;
+    background-color: rgb(236, 240, 255);
     width: 60%;
 }
 
@@ -84,6 +84,7 @@ a:hover {
 
 .products .container {
     width: 90%;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -93,7 +94,9 @@ a:hover {
     width: 400px;
     display: flex;
     align-items: center;
-    margin: 0.75rem;
+    margin: 0.5rem;
+    padding: 0.75rem;
+    background-color: rgb(221, 231, 241);
 }
 
 .products .container img {
@@ -102,7 +105,7 @@ a:hover {
 }
 
 .products .container h3 {
-    text-align: center;
+    margin: 0 auto;
     padding-left: 1rem;
 }
 
@@ -110,7 +113,7 @@ a:hover {
 /* -- The Team -- */
 
 .the-team {
-    background-color: rgb(204, 237, 237);
+    background-color: rgb(204, 212, 237);
     margin-top: 2rem;
     padding: 1rem;
 }
