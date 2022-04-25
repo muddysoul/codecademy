@@ -101,7 +101,7 @@ header .destop .button {
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 680px) {
     header .desktop {
         display: none;
     }
@@ -110,7 +110,7 @@ header .destop .button {
         width: 100%;
     }
     header .content {
-        padding: .5rem 0;
+        padding: .3rem 0;
     }
     header .mobile ul {
         display: flex;
@@ -118,8 +118,9 @@ header .destop .button {
         align-items: center;
         width: 100%;
     }
-    header .mobile li {
-        padding: 0;
+    header .mobile li:not(:last-child) {
+        padding-top: 0.4rem;
+        padding-bottom: 0;
     }
 }
 
@@ -182,7 +183,7 @@ header .destop .button {
     padding: 1.25rem 7.25rem;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 895px) {
     #sign-up-section {
         align-items: center;
         justify-content: center;
@@ -270,6 +271,10 @@ header .destop .button {
         margin: 0px .5rem;
         padding: 1rem;
     }
+    .feature .content {
+        text-align: left;
+        padding: 5%;
+    }
     .feature h2 {
         font-size: 2rem;
         line-height: 1.3;
@@ -280,10 +285,13 @@ header .destop .button {
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 680px) {
     #features-section {
         flex-flow: column;
         padding: 0;
+    }
+    #feature-one {
+        background-color: #e1e1e1;
     }
     .feature {
         margin: 0;
@@ -291,6 +299,7 @@ header .destop .button {
     }
     .feature .content {
         padding: 1.25rem 0 1.875rem 0;
+        text-align: center;
     }
 }
 
@@ -326,7 +335,7 @@ header .destop .button {
     display: flex;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 600px) {
     #filters-section {
         padding: 1.5rem 0 0 0;
     }
@@ -375,8 +384,15 @@ header .destop .button {
     height: 1.875rem;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 895px) {
     #quotes-section .content {
+        padding: 3rem 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #quotes-section .content {
+        flex-flow: column;
         padding: 1.875rem .625rem;
     }
     #quotes-section .quote {
