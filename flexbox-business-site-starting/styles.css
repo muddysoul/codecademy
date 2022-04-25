@@ -1,58 +1,161 @@
-/* -- Font Families -- */
-
-@font-face {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    font-style: italic;
-    font-weight: 400;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUQjIg1_i6t8kCHKm459WxRyS7m0dR9pA.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    font-style: italic;
-    font-weight: 700;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUQjIg1_i6t8kCHKm459WxRyS7m0dR9pA.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-
 /* -- Universal Styles -- */
 
 html {
     font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
 }
 
-body {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
+h1 {
+    font-weight: 500;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.title {
+    font-weight: 400;
+    font-size: 2.25rem;
+    text-align: center;
+    margin-bottom: 0.75rem;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+h3.quote {
+    font-weight: 400;
+    font-style: italic;
+    margin-top: 0;
+}
+
+h4 {
+    font-weight: 400;
+    font-size: 1.25rem;
+    margin: 0.5rem;
+    text-align: center;
+}
+
+
+/* -- Header -- */
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+header nav ul li {
+    padding: 0.5rem 1rem;
+}
+
+a {
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* -- Banner -- */
+
+.banner {
+    width: 100%;
+    height: 500px;
+    background-image: url('banner-background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner .slogan {
+    background-color: aliceblue;
+    width: 60%;
+}
+
+
+/* -- Products -- */
+
+.products .container {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.products .container .item {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    margin: 0.75rem;
+}
+
+.products .container img {
+    max-width: 50%;
+    height: auto;
+}
+
+.products .container h3 {
+    text-align: center;
+    padding-left: 1rem;
+}
+
+
+/* -- The Team -- */
+
+.the-team {
+    background-color: rgb(204, 237, 237);
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.the-team .title {
+    margin-top: 0;
+}
+
+.the-team .team-banner {
+    margin: 0 auto;
+}
+
+.the-team .team-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.the-team .team-container .team-member {
+    width: 400px;
+    margin-top: 1rem;
+}
+
+.the-team img {
+    width: 300px;
+    margin: 0 50px;
+}
+
+.the-team .team-content {
+    margin: 0.5rem;
+    padding: 0;
+}
+
+.the-team .name {
+    margin: 0;
+}
+
+.the-team h4 {
+    font-style: italic;
+}
+
+
+/* -- Footer -- */
+
+footer .contact-info {
+    margin: 1.5rem 0;
 }
